@@ -19,6 +19,7 @@
 
     <properties>
         <docker.image.prefix>itstarting</docker.image.prefix>
+        <com.spotify.dockerfile-maven-plugin>1.4.9</com.spotify.dockerfile-maven-plugin>
         <java.version>1.8</java.version>
     </properties>
 
@@ -32,7 +33,16 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>1.4.9</version>
+                <version>${com.spotify.dockerfile-maven-plugin}</version>
+                <!-- <executions>
+                    <execution>
+                        <id>default</id>
+                        <goals>
+                            <goal>build</goal>
+                            <goal>push</goal>
+                        </goals>
+                    </execution>
+                </executions> -->
                 <configuration>
                     <repository>${docker.image.prefix}/${project.artifactId}</repository>
                 </configuration>
