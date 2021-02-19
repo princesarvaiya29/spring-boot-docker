@@ -25,4 +25,3 @@ $ ./gradlew build docker
 # Run it
 $ java -jar build/libs/spring-boot-docker-0.1.0.jar
 ```
-
