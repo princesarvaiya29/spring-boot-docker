@@ -13,7 +13,7 @@ $ mvn install dockerfile:build -Dmaven.test.skip=true
 $ mvn spring-boot:run
 ```
 
-### By Gladle
+### By Gradle
 
 ```sh
 # Package
